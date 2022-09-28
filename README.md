@@ -1,4 +1,4 @@
-# TensorFLow on Apple Silicon
+# TensorFlow on Apple Silicon
 
 This Repo is a step-by-step guide on how to install and run TensorFlow on Apple Silicon Devices using Conda.
 
