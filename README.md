@@ -24,7 +24,7 @@ anaconda-clean --yes
 ## Setting up Miniconda3
 **Step1.** Download and install `Miniconda3` from https://docs.conda.io/en/latest/miniconda.html. make sure to select `Miniconda3 macOS Apple M1 64-bit pkg` or `Miniconda3 macOS Apple M1 64-bit bash`. 
 
-**Step2.** Restart Terminal and install xcode-select by using the following command. It is also possible to install Xcode from the App Store
+**Step2.** Restart Terminal and install `xcode-select` by using the following command. It is also possible to install Xcode from the App Store
 ```
 xcode-select --install
 ```
@@ -39,17 +39,17 @@ cd tensorflow-apple-silicon
 
 **Step2.** Download and save `tensorflow-metal.yml` to `tensorflow-apple-silicon` directory and execute the following command on the terminal to create an environment with Tensorflow Metal  build and dependencies installed. Make sure to `cd` into the `tensorflow-apple-silicon` directory before running the command.
 ```
-conda env create -f tensorflow-metal.yml -n tensorflow-metal
+conda env create -f tensorflow-metal.yml -n tf-metal
 ```
 
 **Step3.** Activate Conda environment.
 ```
-conda activate tensorflow-metal
+conda activate tf-metal
 ```
 
 **Step4.** Register Conda environment to python kernel. Make sure the environment is activated.
 ```
-python -m ipykernel install --user --name=tensorflow-metal --display-name "Python 3.9(tf-metal)"
+python -m ipykernel install --user --name=tf-metal --display-name "Python 3.9(tf-metal)"
 ```
 
 **Step5.** Start Jupyter Notebook by running the following command on the terminal.
