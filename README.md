@@ -67,8 +67,7 @@ print(f"Pandas Version: {pd.__version__}")
 Output should be something like this:
 
 ```
-Python 3.9.13 | packaged by conda-forge | (main, May 27 2022, 17:00:33) 
-[Clang 13.0.1 ]
+Python 3.9.13 | packaged by conda-forge | [Clang 13.0.1 ]
 
 TensorFlow Version: 2.10.0
 Keras Version: 2.10.0
