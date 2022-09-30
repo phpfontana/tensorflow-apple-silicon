@@ -59,7 +59,35 @@ jupyter notebook
 
 **Step6.** Create a new notebook by "New" -> "Notebook: Python 3.9(tf-metal)". and run the following command to verify dependencies and TensorFlow version/GPU access
 ```
+import sys
+import tensorflow as tf
+import tensorflow.keras
+import sklearn 
+import pandas as pd
 
+# Verifying python version | package manager | 
+print(f"Python {sys.version}\n")
+
+print(f"TensorFlow Version: {tf.__version__}")
+print(f"Keras Version: {tf.keras.__version__}")
+gpu = len(tf.config.list_physical_devices('GPU'))>0
+print("GPU is", "available" if gpu else "NOT AVAILABLE")
+
+print(f"\nScikit-Learn Version: {sklearn.__version__}")
+print(f"Pandas Version: {pd.__version__}")
 ```
 
+Output should be
+
+```
+Python 3.9.13 | packaged by conda-forge | (main, May 27 2022, 17:00:33) 
+[Clang 13.0.1 ]
+
+TensorFlow Version: 2.10.0
+Keras Version: 2.10.0
+GPU is available
+
+Scikit-Learn Version: 1.1.2
+Pandas Version: 1.5.0
+```
 
