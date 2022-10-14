@@ -36,7 +36,7 @@ conda activate tf-metal
 
 **Step4.** Register Conda environment to python kernel. Make sure the environment is activated while executing the command.
 ```
-python -m ipykernel install --user --name=tf-metal --display-name "Python 3.9(tf-metal)"
+python -m ipykernel install --user --name=tf-metal --display-name "Python 3.9 (tf-metal)"
 ```
 
 **Step5.** Start Jupyter Notebook by running the following command on the terminal.
