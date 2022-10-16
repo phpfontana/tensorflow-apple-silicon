@@ -1,4 +1,4 @@
-name: tensorflow-meta
+name: tensorflow-metal
 channels:
   - apple
   - conda-forge
