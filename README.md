@@ -49,8 +49,6 @@ jupyter notebook
 import sys
 import tensorflow as tf
 import tensorflow.keras
-import sklearn 
-import pandas as pd
 
 # Verifying python version | package manager | 
 print(f"Python {sys.version}\n")
@@ -60,8 +58,6 @@ print(f"Keras Version: {tf.keras.__version__}")
 gpu = len(tf.config.list_physical_devices('GPU'))>0
 print("GPU is", "available" if gpu else "not available")
 
-print(f"\nScikit-Learn Version: {sklearn.__version__}")
-print(f"Pandas Version: {pd.__version__}")
 ```
 
 Output should be something like this:
@@ -73,7 +69,5 @@ TensorFlow Version: 2.10.0
 Keras Version: 2.10.0
 GPU is available
 
-Scikit-Learn Version: 1.1.2
-Pandas Version: 1.5.0
 ```
 
